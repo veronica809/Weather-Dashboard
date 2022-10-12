@@ -13,7 +13,9 @@ fetch('http://api.openweathermap.org/geo/1.0/direct?q=Miami,US FL,USA&limit=2&ap
     var lat = data[0].lat
     var lon = data[0].lon
 
-    fetch('https://api.openweathermap.org/data/3.0/onecall?lat='+lat+'&lon='+lon+'&appid=117a215317474ea15e7c30dd04526463', {
+
+    fetch('https://api.openweathermap.org/data/2.5/forecast?lat='+lat+'&lon='+lon+'&appid=117a215317474ea15e7c30dd04526463', {
+    // fetch('https://api.openweathermap.org/data/3.0/onecall?lat='+lat+'&lon='+lon+'&appid=117a215317474ea15e7c30dd04526463', {
       method: 'GET', 
       credentials: 'same-origin', 
       redirect: 'follow', 
